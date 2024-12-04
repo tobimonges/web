@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tateti.css">
+    <title>TATETI</title>
+</head>
+<body>
+    <header>
+        <h1>ELAMIGOS</h1>
+    </header>
+
+    <main>
+        <section>
+
+            <article class="tablero" id="tablero">
+                <table>
+                    <thead>
+                        <button type="button" class="tateti" id="tateti" onclick="iniciarJuego()">TA-TE-TI</button>
+                        
+                    </thead>
+                    <tr>
+                        <td>
+                            <input type="button" value=" " class="cuadrado" id="1" onclick="marcar(1)">
+                            <input type="button" value=" " class="cuadrado" id="2" onclick="marcar(2)">
+                            <input type="button" value=" " class="cuadrado" id="3" onclick="marcar(3)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value=" " class="cuadrado" id="4" onclick="marcar(4)">
+                            <input type="button" value=" " class="cuadrado" id="5" onclick="marcar(5)">
+                            <input type="button" value=" " class="cuadrado" id="6" onclick="marcar(6)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value=" " class="cuadrado" id="7" onclick="marcar(7)">
+                            <input type="button" value=" " class="cuadrado" id="8" onclick="marcar(8)">
+                            <input type="button" value=" " class="cuadrado" id="9" onclick="marcar(9)">
+                        </td>
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+<script type="text/javascript" src="tateti.js"></script>
+</html>

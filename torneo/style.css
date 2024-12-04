@@ -1,4 +1,5 @@
-/* General */
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,19 +8,7 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #2c3e50;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-/* Tabla principal */
 .tabla {
     width: 90%;
     max-width: 1200px;
@@ -31,7 +20,6 @@ header h1 {
     overflow: hidden;
 }
 
-/* Cabecera de la tabla */
 .cabecera {
     display: grid;
     grid-template-columns: 1fr 2fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
@@ -46,7 +34,7 @@ header h1 {
     padding: 0.5rem;
 }
 
-/* Filas de equipos */
+
 [class^="equipo"] {
     display: grid;
     grid-template-columns: 1fr 2fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
@@ -80,18 +68,3 @@ header h1 {
     padding-left: 0.5rem;
 }
 
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .cabecera, [class^="equipo"] {
-        grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
-    }
-
-    .gf, .gc, .dg, .ultimos {
-        display: none;
-    }
-
-    .club, .nombre {
-        padding-left: 0;
-    }
-}

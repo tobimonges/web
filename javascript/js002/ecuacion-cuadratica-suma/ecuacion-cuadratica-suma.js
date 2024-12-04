@@ -1,3 +1,5 @@
+
+
 document.getElementById("calcular").addEventListener("click", function() {
     let a = parseFloat(document.getElementById("valorA").value);
     let b = parseFloat(document.getElementById("valorB").value);
@@ -12,10 +14,10 @@ document.getElementById("calcular").addEventListener("click", function() {
     
     if (raiz > 0) {
         let resultado = (-b + Math.sqrt(raiz)) / (2 * a);
-        document.getElementById("resultado"). value = resultado
+        document.getElementById("resultado").value = resultado
     } else if (raiz === 0) {
         let resultado = -b / (2 * a);
-        document.getElementById("resultado"). value = resultado
+        document.getElementById("resultado").value = resultado
     } else {
         document.getElementById("resultado").value = "Syntax Error";
     }

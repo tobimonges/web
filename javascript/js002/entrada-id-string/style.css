@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #bdc3c7;
+}
+.pantalla {
+    margin-top: 20px;
+    
+    align-items: center;
+    width: 480px;
+    height: 600px;
+    background-color: #eaedef;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+p {
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: justify;
+    top: 20px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-color: #fff;
+}
+.entrada {
+    width: auto;
+    height: auto;
+    position: relative;
+    align-content: center;
+    top: 20px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.valores {
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #fff;
+    outline: none;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.modificar {
+    width: 100px;
+    height: 35px;
+    background-color: #70d6ff;
+    
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.valores:hover, .valores:focus, .modificar:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
+    border: none;
+}
+
+.modificar:active {
+    font-size: 13px;
+}

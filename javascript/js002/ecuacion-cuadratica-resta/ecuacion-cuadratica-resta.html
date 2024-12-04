@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="ecuacion-cuadratica-resta.css">
+</head>
+<body>
+    <div class="ecuacionResta">
+        <div class="cajaTitulo">
+            <h1>(-B - SQRT(B^2 - 4AC))/2A</h1>
+        </div>
+        <div class="cajaValores">
+            <input type="number" class="valores" id="valorA" placeholder="A">
+            <input type="number" class="valores" id="valorB" placeholder="B">
+            <input type="number" class="valores" id="valorC" placeholder="C">
+        </div>
+        <div class="botonCalcular">
+            <input type="button" class="calcular" value="Calcular" id="calcular">
+        </div>
+        <div class="cajaResultado">
+            <input type="text" class="resultado" disabled id="resultado" onclick="calcular()">
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="ecuacion-cuadratica-resta.js"></script>
+</html>

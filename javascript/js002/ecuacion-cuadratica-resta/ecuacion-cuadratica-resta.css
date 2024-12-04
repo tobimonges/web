@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #bdc3c7;
+}
+
+
+.ecuacionResta {
+    width: 340px;
+    height: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    top: 50px;
+    position: relative;
+    text-align: center;
+    background-color: #eaedef;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+h1 {
+    font-size: 1.2em;
+    color: rgb(0 0 0 / 0.7);
+}
+.cajaTitulo {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin: 15px auto;
+    
+}
+
+.valores {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+
+    text-align: right;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.resultado {
+    background-color: #fff;
+    text-align: right;
+    height: 40px;
+    width: 275px;
+    margin: 10px 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.calcular {
+    width: 120px;
+    height: 60px;
+    margin: 30px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: #e9ff70;
+
+}
+.calcular:hover, .valores:hover, .valores:focus {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
+}
+
+.calcular:active {
+    font-size: 17px;
+    
+}
+

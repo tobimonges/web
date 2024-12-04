@@ -1,0 +1,73 @@
+* {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #bdc3c7;
+    
+}
+
+div, h1, p{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+
+}
+
+h1, p, input {
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    
+}
+
+.cajaPantalla {
+    position: relative;
+    top: 30px;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.titulo {
+    background-color: #e9ff70;
+}
+
+.texto {
+    background-color: #ff9770;
+}
+
+.numero {
+    background-color: #ff70a6;
+}
+
+.valores {
+    background-color: #ffd670;
+}
+
+.modificar {
+    width: 150px;
+    height: 60px;
+    background-color: #70d6ff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+
+.valores:hover, .valores:focus, .modificar:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
+    border: none;
+}
+
+.modificar:active {
+    font-size: 17px;
+}

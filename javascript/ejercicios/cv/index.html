@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="visor">
 
-    <header>
-        <h1>CURRICULUM VITAE</h1>
-    </header>
-    
-    <main id="contenido">
-
+        
+        <header>
+            <h1>CURRICULUM VITAE</h1>
+        </header>
+        
+        <main id="contenido">
+            
         <section id="informacion-personal">
             <hr>
             <h2>Informacion Personal</h2>
@@ -31,7 +33,7 @@
                 <li>Contratenme</li>
             </ul>
         </section>
-
+        
         <section id="experiencia">
             <hr>
             <h2>Experiencia</h2>
@@ -41,7 +43,7 @@
                 <li>Contratenme</li>
             </ul>
         </section>
-
+        
         <section id="habilidades">
             <hr>
             <h2>Habilidades</h2>
@@ -52,21 +54,22 @@
             </ul>
         </section>
         <hr>
-    </main>
-
-    <div class="boton">
-        <button id="descargar">Descargar</button>
+        </main>
+        
+        <div class="boton">
+            <button id="descargar">Descargar</button>
+        </div>
+        
+        <footer>
+            <h2>Contacto</h2>
+            <form id="contacto">
+                <input type="text" id="mensaje" placeholder="Escribe tu mensaje aqui">
+                <button type="submit" class="enviar">Enviar</button>
+            </form>
+            <p id="enviar"></p>
+        </footer>
+        
     </div>
-
-    <footer>
-        <h2>Contacto</h2>
-        <form id="contacto">
-            <input type="text" id="mensaje" placeholder="Escribe tu mensaje aqui">
-            <button type="submit" class="enviar">Enviar</button>
-        </form>
-        <p id="enviar"></p>
-    </footer>
-
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>

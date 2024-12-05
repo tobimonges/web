@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    color: #999;
+    background-color: #000
+}
+h1 {font-size: 2.5rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.75rem;}
+h4 {font-size: 1.5rem;}
+h5 {font-size: 1.25rem;}
+h6 {font-size: 1rem;}
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 15px;
+    font-weight: 900;
+
+}
+p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* Navbar */
+#navbar {
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#navbar a {
+	color: #999;
+}
+#navbar .logo {
+	float: left;
+	padding-top: 10px;
+	font-size: 25px;
+}
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+#navbar ul li {
+    float: left;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+#navbar ul li a:hover {
+    color: #75e3e9;
+}
+
+/*
+#boton-portafolio {
+    color: #aaaaaa;
+}
+*/
+/* Showcase*/
+#showcase {
+    padding: 20px 0;
+    margin: 20px 0;
+}
+.showcase-row {
+    display: flex;
+    margin: 20px 0;
+}
+.showcase-row-title {
+    margin: 40px 0;
+}
+.showcase-row-title p.large {
+    margin: 20px 0;
+}
+
+
+
+/* clases */
+.container {
+    transition: all 2s ease-in-out;
+}
+.container.fade-out {
+    opacity: 0;
+}
+.txt-celeste {
+	color: #23adb4;
+}
+.display-1 {
+	font-size: 5rem;
+}
+.large {
+    
+    font-family: monospace;
+    padding: 30px 0;
+	font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 23px;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-radius: 4px;
+    margin: 30px 0;
+}
+.btn-round {
+    border-radius: 20px;
+}
+.btn-dark {
+    background-color: #23adb4;
+    color: #000;
+}
+.btn-dark:hover {
+    background-color: #75e3e9;
+}
+.container {
+    margin: auto;
+    max-width: 1000px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+/* header*/
+#header {
+    height: 100vh;
+}
+#header h1 a:hover {
+    color: #fff;
+}
+#header h1 a {
+    font-size: 1.7rem;
+}
+
+/* animacion */
+#typing-effect {
+    font-family: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #00bcd4;
+    display: inline;
+    animation: blink 0.6s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #ccc;
+    }
+}

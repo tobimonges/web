@@ -11,7 +11,6 @@ btn.addEventListener('click', () => {
 });
 function renderCharacters(characters) {
     characters.forEach(ch => {
-        div.innerHTML += `<img src="$ch.image"> `;
+        div.innerHTML += `<img alt="" src="$ch.image"> `;
     })
 }
-

@@ -5,6 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    height: 100vh;
+}
 body {
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
@@ -303,8 +306,6 @@ p {
     margin-top: 70px;
     background-color: #1d1d1d;
     border-radius: 28px;
-    margin-bottom: 2rem;
-    
 }
 
 li {
@@ -343,4 +344,62 @@ section:active h2{
 
 hr {
     box-shadow: 1px 1px 1px 1px#00bcd4;
+}
+.format-container-contact {
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    overflow: auto;
+    padding: 0 20px;
+    padding-top: 0px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    
+}
+.contacto {
+    height: auto;
+    width: auto;
+    padding: 10px 60px;
+    margin: 20px auto 10px auto;
+    background: #1d1d1d;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+form h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 50px;
+    color: #00bcd4;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+input, textarea{
+    background-color: #333;
+    margin: 20px auto;
+    color: #fff;
+    font-weight: 600;
 }

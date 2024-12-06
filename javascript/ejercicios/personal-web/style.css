@@ -5,10 +5,16 @@
     margin: 0;
     box-sizing: border-box;
 }
-html, body {
+body {
+    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     color: #bbb;
-    background-color: #000
+    background-color: #000;
+    width: 1000px;
+    
+}
+main {
+    margin: 0 auto;
 }
 h1 {font-size: 2.5rem;}
 h2 {font-size: 2rem;}
@@ -31,9 +37,12 @@ p {
 }
 /* Navbar */
 #navbar {
+
+    width: 1000px;
     overflow: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin: 0 auto;
 }
 #navbar a {
 	color: #bbb;
@@ -139,8 +148,8 @@ p {
 
 /* header-home*/
 #header {
-    
-    width: 100vw;
+    margin: 0 auto;
+    width: 1000px;
 }
 #header h1 a:hover {
     color: #fff;
@@ -171,7 +180,7 @@ p {
 
 /* PORTAFOLIO CSS */
 
-.format-container {
+.format-container-portfolio {
     max-width: 1000px;
     margin: 0 auto;
     overflow: auto;
@@ -282,4 +291,56 @@ p {
 }
 .codigo-item:nth-child(6n) .codigo-item__bg {
     background-color: #4c49ea;
+}
+
+/* ------ ABOUT ME ----------- */
+
+.format-container-about {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 40px;
+    margin-top: 70px;
+    background-color: #1d1d1d;
+    border-radius: 28px;
+    margin-bottom: 2rem;
+    
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+section h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+section ul li, section p {
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.aboutme h1 {
+    font-size: 5rem;
+    text-align: center;
+    padding: 30px;
+    color: #00bcd4;
+}
+
+section:hover h2{
+    color: #23adb4;
+
+}
+section:active h2{
+    color: #00bcd4;
+
+}
+
+hr {
+    box-shadow: 1px 1px 1px 1px#00bcd4;
 }

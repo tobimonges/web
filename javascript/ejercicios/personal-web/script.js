@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     typeWriter();
 });
 
-document.getElementById('boton-portafolio').addEventListener('click', function() {
+document.getElementsByClassName('boton-portafolio').addEventListener('click', function() {
     document.querySelector('.container').classList.add('fade-out');
     setTimeout(() => {
         window.location.href = 'portfolio.html'

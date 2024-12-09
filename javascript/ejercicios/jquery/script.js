@@ -48,28 +48,32 @@ const btn = document.getElementById('boton');
 const div = document.getElementById('personajes')
 
 btn.addEventListener('click', () => {
-  console.log('AJAX Request');
   
+  // Crear una instancia de XMLHttpRequest
   const xhr = new XMLHttpRequest();
-  
+
+  // Configurar la solicitud (metodo GET y URL)
   xhr.open('GET', 'https://rickandmortyapi.com/api/character', true);
 
+  // Registrar el evento para manejar la respuesta
   xhr.onload = function () {
-    if (xhr.status === 200) {
-      const data = JSON.parse(xhr.responseText);
-      renderCharacters(data.results);
-    } else {
-      console.error(`Error: ${xhr.status} - ${xhr.statusText}`);
-    }
+
+    // Convertir la respuesta JSON a un objeto
+    const data = JSON.parse(xhr.responseText);
+
+    // Pasar los resultados a la funcion
+    renderCharacters(data.results);
   };
-  xhr.onerror = function () {
-    console.error('Error en la solicitud AJAX.');
-  };
+
+  // Enviar la solicitud
   xhr.send();
+
 });
 
 function renderCharacters(characters) {
   characters.forEach(element => {
+    
+    // Insertar las imagenes en el div
     div.innerHTML += `<img src="${element.image}" alt="${element.name}">`;
   });
 }

@@ -48,9 +48,28 @@ const btn = document.getElementById('boton');
 const div = document.getElementById('personajes')
 
 btn.addEventListener('click', () => {
-    const xhr = new XMLHttpRequest();
+  console.log('AJAX Request');
+  
+  const xhr = new XMLHttpRequest();
+  
+  xhr.open('GET', 'https://rickandmortyapi.com/api/character', true);
 
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      const data = JSON.parse(xhr.responseText);
+      renderCharacters(data.results);
+    } else {
+      console.error(`Error: ${xhr.status} - ${xhr.statusText}`);
+    }
+  };
+  xhr.onerror = function () {
+    console.error('Error en la solicitud AJAX.');
+  };
+  xhr.send();
+});
 
-
-
-})
+function renderCharacters(characters) {
+  characters.forEach(element => {
+    div.innerHTML += `<img src="${element.image}" alt="${element.name}">`;
+  });
+}

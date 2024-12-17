@@ -14,15 +14,14 @@ public class PostulanteController {
 
     @Autowired
     PostulanteService postulanteService;
-
     @PostMapping()
     public PostulanteModel savePostulante(@RequestBody PostulanteModel postulante) {
         return this.postulanteService.savePostulante(postulante);
     }
 
-    @DeleteMapping(path = "/{id}")
-    public String deleteById(@PathVariable("id") Integer id) {
-        boolean ok = this.postulanteService.deletePostulante(id);
+    @DeleteMapping(path = "/{ci}")
+    public String deletePostulanteByNroCedula(@PathVariable("ci") Integer ci) {
+        boolean ok = this.postulanteService.deletePostulante(ci);
         return ok ? "Se elimino el postulante" : "No se pudo eliminar";
     }
 
@@ -36,16 +35,18 @@ public class PostulanteController {
         return this.postulanteService.findById(id);
     }
 
-    /*
-    @GetMapping("/query")
-    public ArrayList<PostulanteModel> findByNroCedula(@RequestParam("ci") Integer ci) {
+
+    @GetMapping("/cedula")
+    public Optional<PostulanteModel> findByNroCedula(@RequestParam("ci") Integer ci) {
         return this.postulanteService.findByNroCedula(ci);
     }
-     */
 
+/*
     @GetMapping("/cedula/{ci}")
     public Optional<PostulanteModel> findByNroCedula(@PathVariable("ci") Integer ci) {
         return this.postulanteService.findByNroCedula(ci);
     }
+
+ */
 
 }

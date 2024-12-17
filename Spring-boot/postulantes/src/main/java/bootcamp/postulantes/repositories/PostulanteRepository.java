@@ -10,4 +10,5 @@ import java.util.Optional;
 @Repository
 public interface PostulanteRepository extends CrudRepository<PostulanteModel, Integer> {
     Optional<PostulanteModel> findByNroCedula (Integer ci);
+    Optional<PostulanteModel> deletePostulanteByNroCedula(Integer ci);
 }

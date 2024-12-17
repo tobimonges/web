@@ -36,5 +36,8 @@ public class PostulanteService {
     public Optional<PostulanteModel> findByNroCedula (Integer ci) {
         return postulanteRepository.findByNroCedula(ci);
     }
+    public Optional<PostulanteModel> deletePostulanteByNroCedula (Integer ci) {
+        return postulanteRepository.deletePostulanteByNroCedula(ci);
+    }
 
 }

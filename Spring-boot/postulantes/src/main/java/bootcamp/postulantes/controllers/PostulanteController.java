@@ -41,6 +41,11 @@ public class PostulanteController {
         return this.postulanteService.findByNroCedula(ci);
     }
 
+    @PutMapping("/{id}")
+    public Optional<PostulanteModel> actualizarUsuario(@PathVariable Integer id, @RequestBody PostulanteModel postulante) {
+        return postulanteService.editPostulante(id, postulante);
+    }
+
 /*
     @GetMapping("/cedula/{ci}")
     public Optional<PostulanteModel> findByNroCedula(@PathVariable("ci") Integer ci) {

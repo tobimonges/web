@@ -6,6 +6,7 @@ import bootcamp.postulantes.repositories.PostulanteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.swing.text.html.Option;
 import java.util.ArrayList;
 import java.util.Optional;
 
@@ -38,6 +39,9 @@ public class PostulanteService {
     }
     public Optional<PostulanteModel> deletePostulanteByNroCedula (Integer ci) {
         return postulanteRepository.deletePostulanteByNroCedula(ci);
+    }
+    public Optional<PostulanteModel> editPostulante(Integer id, PostulanteModel postulante) {
+        return postulanteRepository.editPostulante(id, postulante);
     }
 
 }
